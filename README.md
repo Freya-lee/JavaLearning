@@ -1,5 +1,5 @@
 ## 这主要记录我从0开始学习java的每一天写的一些代码和小笔记
-配套的教程是b'站的一个999个视频的java教程,链接在下面  
+配套的教程是b站的一个999个视频的java教程,链接在下面  
 
 [java基础+进阶](https://www.bilibili.com/video/BV1uJ411k7wy?p=84&spm_id_from=pageDriver)  
   
