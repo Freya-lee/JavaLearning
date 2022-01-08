@@ -14,5 +14,6 @@ public class Demo05ArrayUse {
         System.out.println(array[0]);
         //给数组的某一个赋值
         array[1]=123;
+        System.out.println(array[1]);
     }
 }
