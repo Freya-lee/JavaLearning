@@ -19,7 +19,7 @@ import java.util.HashMap;
 public abstract class RedPacketFrame extends JFrame{
     private static final long serialVersionUID = 1L;
 
-    private static final String DIR = ".\\/pic";
+    private static final String DIR = "../pic";
 
     private ArrayList<Integer> moneyList = null;
 
