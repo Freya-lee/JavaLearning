@@ -16,8 +16,9 @@ public class Bootstrap {
        MyRed myRed = new MyRed("标题");
        //设置群主名称
         myRed.setOwnerName("Lina");
-        OpenMode normal = new NromalMode();//普通红包
-        myRed.setOpenWay(normal);
-
+//        OpenMode normal = new NromalMode();//普通红包
+//        myRed.setOpenWay(normal);
+            OpenMode random = new RandomMode();//手气红包
+            myRed.setOpenWay(random);
     }
 }
