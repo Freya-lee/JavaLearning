@@ -12,9 +12,17 @@ public class RandomMode implements OpenMode {
         //随机分配，最少一分钱
         //最多不大于剩下金额平均数的二倍一半的二倍
         Random r = new Random();
-        for (int i = 0; i < totalCount; i++) {
-            list.add(r.nextInt(1)+(2*(totalMoney/totalCount-i-1)));
+        //totalMoney不变Count也不变
+        int leftMoney = totalMoney;
+        int leftCount = totalCount;
+        //随机发前n-1个
+        for (int i = 0; i < totalCount-1; i++) {
+            int money = r.nextInt(leftMoney/leftCount*2)+1;
+            list.add(money);
+            leftMoney-=money;
+            leftCount--;
         }
+        list.add(leftMoney);
         return list;
     }
 }
