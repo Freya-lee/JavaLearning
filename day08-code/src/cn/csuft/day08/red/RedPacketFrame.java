@@ -19,7 +19,7 @@ import java.util.HashMap;
 public abstract class RedPacketFrame extends JFrame{
     private static final long serialVersionUID = 1L;
 
-    private static final String DIR = ".\\/pic";
+    private static final String DIR = "D:/idea-workspaces/JavaLearning/day08-code/src/cn/csuft/day08/red/pic";
 
     private ArrayList<Integer> moneyList = null;
 
@@ -60,7 +60,7 @@ public abstract class RedPacketFrame extends JFrame{
     private static JTextField input_msg = new JTextField("恭喜发财  ,  大吉大利");
     private static JTextField input_total_show = new JTextField("$ " + input_total.getText().trim());
     private static JLabel input_inMoney = new JLabel(); // 不可见
-    private static JLabel input_bg_label = new JLabel(new ImageIcon(DIR + "\\01_input.jpg"));
+    private static JLabel input_bg_label = new JLabel(new ImageIcon(DIR + "/01_input.jpg"));
 
     static {
 
@@ -104,8 +104,8 @@ public abstract class RedPacketFrame extends JFrame{
     private static JPanel openPanel = new JPanel();
 
     private static JTextField open_ownerName = new JTextField("谁谁谁");
-    private static JLabel open_label = new JLabel(new ImageIcon(DIR + "\\02_open_2.gif"));
-    private static JLabel open_bg_label = new JLabel(new ImageIcon(DIR + "\\02_open_1.jpg"));
+    private static JLabel open_label = new JLabel(new ImageIcon(DIR + "/02_open_2.gif"));
+    private static JLabel open_bg_label = new JLabel(new ImageIcon(DIR + "/02_open_1.jpg"));
 
     static {
 
@@ -137,7 +137,7 @@ public abstract class RedPacketFrame extends JFrame{
     private static JPanel showPanel2 = new JPanel();
     private static JScrollPane show_jsp = new JScrollPane(showPanel2);
 
-    private static JLabel show_bg_label = new JLabel(new ImageIcon(DIR + "\\03_money_1.jpg"));
+    private static JLabel show_bg_label = new JLabel(new ImageIcon(DIR + "/03_money_1.jpg"));
 
     private static JTextField show_name = new JTextField("用户名称");
     private static JTextField show_msg = new JTextField("祝福信息");
@@ -213,7 +213,7 @@ public abstract class RedPacketFrame extends JFrame{
      */
     private void initFrame() {
         // logo
-        this.setIconImage(Toolkit.getDefaultToolkit().getImage(DIR + "\\logo.gif"));
+        this.setIconImage(Toolkit.getDefaultToolkit().getImage(DIR + "/logo.gif"));
 //        System.out.println("LOGO初始化...");
 
         // 窗口设置
